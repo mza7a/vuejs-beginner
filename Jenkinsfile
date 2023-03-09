@@ -4,6 +4,11 @@ pipeline {
 	stages {
 
 		stage("build") {
+			when {
+				expression {
+					BRANCH_NAME == 'develop'
+				}
+			}
 			steps {
 				echo "This is the part where we build the application"
 			}
