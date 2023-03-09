@@ -25,3 +25,5 @@ pipeline {
 				echo "This is the part where we deploy the application"
 			}
 		}
+	}
+}
